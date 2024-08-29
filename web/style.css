@@ -1,0 +1,632 @@
+/*   
+Theme Name: Southside Neighborhood Gospel Festival
+Theme URI: http://www.christmasinenglewood.org
+Description: A fancy theme.
+Author: DicimiTech
+Author URI: http://www.dicimitech.com
+Version: 1.0
+*/
+
+/*-------------------------------------------
+	Reset
+-------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	}									
+
+article, aside, figure, footer, header, hgroup, nav, section { display: block; }
+
+html { overflow-y: scroll; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted rgb(0, 0, 0); cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+th { font-weight: bold; vertical-align: bottom; }
+td { font-weight: normal; vertical-align: top; }
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid rgb(204, 204, 204); margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
+	}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea { font: 99% sans-serif; }
+
+table {font-size: inherit; font: 100%;}
+ 
+a:hover, a:active { outline: none; }
+
+small { font-size: 85%; }
+
+strong, th { font-weight: bold; }
+
+td, td img { vertical-align: top; } 
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button { cursor: pointer; }
+
+button, input, select, textarea { margin: 0; }
+
+button {width: auto; overflow: visible;}
+ 
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.group:before, .group:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.group:after { clear: both; }
+.group { zoom: 1; }
+
+
+/*-------------------------------------------
+	Base
+-------------------------------------------*/
+
+
+body {
+	font-size: 16px;
+	line-height: 22px;
+	font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 3px 3px rgba(0, 0, 0, .95);
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+	}
+
+#page {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 30px 0 30px 0;
+	background: rgb(55, 55, 55) url(-/media/background.jpg) center top no-repeat;
+	}
+
+.home #page {
+	padding: 40px 0;
+	background: rgb(55, 55, 55) url(-/media/enter-background.jpg) center top no-repeat;
+	height: 688px;
+	}
+
+select, input, textarea {}
+
+a {}
+a:hover {}
+
+::-moz-selection{
+	color: rgb(255, 255, 255);
+	background: rgb(252, 215, 0);
+	text-shadow: none;
+	}
+
+::selection {
+	color: rgb(255, 255, 255);
+	background: rgb(252, 215, 0);
+	text-shadow: none;
+	} 
+
+a:link { -webkit-tap-highlight-color: rgb(252, 215, 0); } 
+
+ins {
+	color: rgb(0, 0, 0);
+	background-color: rgb(252, 215, 0);
+	text-decoration: none;
+	}
+
+mark {
+	color: rgb(0, 0, 0);
+	background-color: rgb(252, 215, 0);
+	font-style: italic;
+	font-weight: bold;
+	}
+
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+#header {}
+
+.home #header { display: none; }
+
+	#presenting {
+		text-align: center;
+		padding: 0 180px 20px 180px;
+		font-weight: bold;
+		}
+
+	#gallery-wrapper {
+		position: relative;
+		height: 342px;
+		z-index: 1;
+		}
+
+		#site-title {
+			position: absolute;
+			left: 20px;
+			top: 0;
+			text-indent: -9999px;
+			z-index: 9999;
+			}
+
+			#site-title a {
+				display: block;
+				width: 204px;
+				height: 342px;
+				background: url(-/media/logo.png);
+				}
+
+		.slider-wrapper {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 5;
+			}
+
+
+/*-------------------------------------------
+	Body
+-------------------------------------------*/
+
+
+#body {}
+
+	#primary {}
+
+		.enter {
+			position: relative;
+			top: 100px;
+			width: 260px;
+			margin: 0 auto;
+			text-indent: -9999px;
+			}
+
+			.enter a {
+				display: block;
+				width: 260px;
+				height: 470px;
+				background: url(-/media/enter-normal.png);
+				}
+
+			.enter a:hover { background: url(-/media/enter-hover.png); }
+
+		.page-title { display: none; }
+
+		#welcome {
+			padding: 20px 100px;
+			background: rgba(0, 0, 0, .25);
+			}
+
+		.ie7 #welcome,
+		.ie8 #welcome { background: url(-/media/section-background.png); }
+
+			#welcome h2 {
+				position: relative;
+				left: -5px;
+				margin-bottom: 15px;
+				font-size: 36px;
+				font-weight: normal;
+				text-transform: uppercase;
+				color: rgb(194, 62, 163);
+				width: 191px;
+				height: 49px;
+				background: url(-/media/welcome.png);
+				text-indent: -9999px;
+				}
+
+			#welcome p {
+				margin-bottom: 16px;
+				font-weight: bold;
+				}
+
+			#welcome p:last-child { margin: 0; }
+
+		#events { padding: 20px 100px; }
+
+			#events h3 {
+				margin-bottom: 15px;
+				font-size: 36px;
+				font-weight: normal;
+				text-transform: uppercase;
+				color: rgb(247, 222, 27);
+				background: url(-/media/events-schedule.png);
+				width: 316px;
+				height: 49px;
+				text-indent: -9999px;
+				}
+
+			#events ul {}
+
+				#events li {
+					float: left;
+					width: 250px;
+					margin-right: 37px;
+					}
+
+				#events li:last-child { margin: 0; }
+
+					#events .left h4 {
+						position: relative;
+						left: -5px;
+						color: rgb(247, 222, 27);
+						font-family: Lobster, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+						font-size: 32px;
+						line-height: 38px;
+						font-weight: bold;
+						width: 281px;
+						height: 57px;
+						background: url(-/media/kickoff-ceremony.png);
+						text-indent: -9999px;
+						}
+
+					#events .middle h4 {
+						position: relative;
+						left: -5px;
+						color: rgb(247, 222, 27);
+						font-family: Lobster, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+						font-size: 32px;
+						line-height: 38px;
+						font-weight: normal;
+						width: 265px;
+						height: 57px;
+						background: url(-/media/prayer-in-the-park.png);
+						text-indent: -9999px;
+						}
+
+					#events .right h4 {
+						position: relative;
+						left: -5px;
+						color: rgb(247, 222, 27);
+						font-family: Lobster, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+						font-size: 32px;
+						line-height: 38px;
+						font-weight: normal;
+						width: 256px;
+						height: 91px;
+						background: url(-/media/southside-gospel-festival.png);
+						text-indent: -9999px;
+						}
+
+					#events h5 { font-weight: bold; }
+
+					#events p {
+						font-style: italic;
+						font-weight: bold;
+						}
+
+						#events em { display: block; }
+
+		#performers {
+			padding: 20px 100px;
+			background: rgba(0, 0, 0, .25);
+			}
+
+		.ie7 #performers,
+		.ie8 #performers { background: url(-/media/section-background.png); }
+
+			#performers h3 {
+				margin-bottom: 20px;
+				font-size: 36px;
+				font-weight: normal;
+				text-transform: uppercase;
+				color: rgb(44, 236, 66);
+				background: url(-/media/performances-by.png);
+				width: 333px;
+				height: 44px;
+				text-indent: -9999px;
+				}
+
+			#performers ul {
+				position: relative;
+				height: 1115px;
+				z-index: 1;
+				}
+
+			.ie7 #performers ul { width: 824px; }
+
+				#performers li {
+					position: absolute;
+					text-align: center;
+					z-index: 5;
+					}
+
+				/* Left Column */
+
+				#shekinah-glory-ministries {
+					left: 0;
+					top: 0;
+					}
+
+				.ie7 #shekinah-glory-ministries { width: 241px; }
+
+					#shekinah-glory-ministries h4 {
+						background: url(-/media/shekina-glory-ministries.png);
+						width: 255px;
+						height: 34px;
+						text-indent: -9999px;
+						}
+
+				#lady-lavargna-hubbard {
+					left: 0;
+					top: 220px;
+					}
+
+				.ie7 #lady-lavargna-hubbard { width: 179px; }
+
+					#lady-lavargna-hubbard h4 {
+						background: url(-/media/lady-lavargna-hubbard.png);
+						width: 239px;
+						height: 33px;
+						text-indent: -9999px;
+						}
+
+				#tre-thomas {
+					left: 0;
+					top: 540px;
+					}
+
+				.ie7 #tre-thomas { width: 206px; }
+
+					#tre-thomas h4 {
+						background: url(-/media/tre-thomas.png);
+						width: 115px;
+						height: 27px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				#the-brown-sisters {
+					left: 0;
+					top: 950px;
+					}
+
+				.ie7 #the-brown-sisters { width: 234px; }
+
+					#the-brown-sisters h4 {
+						background: url(-/media/the-brown-sisters.png);
+						width: 176px;
+						height: 28px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				/* Middle Column */
+
+				#avery-sunshine {
+					left: 305px;
+					top: 0;
+					}
+
+				.ie7 #avery-sunshine { width: 203px; }
+
+					#avery-sunshine h4 {
+						background: url(-/media/avery-sunshine.png);
+						width: 158px;
+						height: 34px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				#mys-michelle {
+					left: 265px;
+					top: 260px;
+					}
+
+				.ie7 #mys-michelle { width: 279px; }
+
+					#mys-michelle h4 {
+						background: url(-/media/mys-michelle.png);
+						width: 126px;
+						height: 32px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				#the-gospel-crusaders {
+					left: 225px;
+					top: 660px;
+					}
+
+				.ie7 #the-gospel-crusaders { width: 351px; }
+
+					#the-gospel-crusaders h4 {
+						background: url(-/media/the-gospel-crusaders.png);
+						width: 205px;
+						height: 33px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				/* Right Column */
+
+				#jesse-campbell {
+					right: 0;
+					top: 0;
+					}
+
+				.ie7 #jesse-campbell { width: 254px; }
+
+					#jesse-campbell h4 {
+						background: url(-/media/jesse-campbell.png);
+						width: 148px;
+						height: 33px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				#faith-howard {
+					right: 0;
+					top: 235px;
+					}
+
+				.ie7 #faith-howard { width: 251px; }
+
+					#faith-howard h4 {
+						background: url(-/media/faith-howard.png);
+						width: 137px;
+						height: 27px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				#prosper {
+					right: 0;
+					top: 545px;
+					}
+
+				.ie7 #prosper { width: 228px; }
+
+					#prosper h4 {
+						background: url(-/media/prosper.png);
+						width: 81px;
+						height: 30px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+				#elder-deandre-patterson {
+					right: 0;
+					top: 945px;
+					}
+
+				.ie7 #elder-deandre-patterson { width: 232px; }
+
+					#elder-deandre-patterson h4 {
+						background: url(-/media/elder-deandre-patterson.png);
+						width: 239px;
+						height: 28px;
+						margin: 0 auto;
+						text-indent: -9999px;
+						}
+
+					#performers img {}
+
+					#performers h4 {
+						color: rgb(44, 236, 66);
+						font-family: Lobster, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+						font-size: 20px;
+						font-weight: normal;
+						text-align: center;
+						}
+
+			#performers p {
+				position: relative;
+				top: -105px;
+				left: 265px;
+				color: rgb(44, 236, 66);
+				font-size: 36px;
+				font-family: Lobster, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-align: center;
+				width: 297px;
+				height: 54px;
+				background: url(-/media/and-many-more.png);
+				text-indent: -9999px;
+				}
+
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer { padding: 20px 100px 0 100px; }
+
+.home #footer { display: none; }
+
+	.footer-widgets { padding-bottom: 20px; }
+
+		.widget {
+			float: left;
+			width: 412px;
+			font-weight: bold;
+			}
+	
+			#text-2 h2 {
+				position: relative;
+				left: -5px;
+				margin-bottom: 15px;
+				font-size: 36px;
+				font-weight: normal;
+				text-transform: uppercase;
+				color: rgb(45, 173, 239);
+				background: url(-/media/thank-you.png);
+				width: 203px;
+				height: 46px;
+				text-indent: -9999px;
+				}
+
+			#text-3 h2 {
+				position: relative;
+				left: -5px;
+				margin-bottom: 15px;
+				font-size: 36px;
+				font-weight: normal;
+				text-transform: uppercase;
+				color: rgb(45, 173, 239);
+				background: url(-/media/contact.png);
+				width: 163px;
+				height: 46px;
+				text-indent: -9999px;
+				}
+
+	#copyright {
+		font-size: 12px;
+		line-height: 16px;
+		text-align: center;
+		font-weight: bold;
+		}
+
+		#copyright a { color: rgb(255, 255, 255); }
+
+
+/*-------------------------------------------
+	Print
+-------------------------------------------*/
+
+
+@media print {}
+
+
+/*-------------------------------------------
+	Responsiveness
+-------------------------------------------*/
+
+@media screen and (max-device-width: 480px) {}
+
+@media all and (orientation: portrait) {}
+
+@media all and (orientation: landscape) {}
